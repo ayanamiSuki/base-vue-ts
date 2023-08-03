@@ -21,13 +21,13 @@ export default defineConfig({
     // extensions: ['.js', '.json', '.ts'] // 使用路径别名时想要省略的后缀名，可以自己 增减
   },
   // 全局的css
-  // css:{
-  //   preprocessorOptions:{
-  //     scss:{
-  //       additionalData:`@import "@/assets/scss/common/variables.scss";`,
-  //     }
-  //   }
-  // },
+  css:{
+    preprocessorOptions:{
+      scss:{
+        additionalData:`@import "@/assets/scss/common/variables.scss";`,
+      }
+    }
+  },
   // 跨域
   server: {
     //使用IP能访问

@@ -1,0 +1,82 @@
+/*******************************
+            Flex
+*******************************/
+.ui-flex {
+    display: flex;
+    &.column {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    //折行
+    &.flex-nowrap {
+        flex-wrap: nowrap;
+    }
+    &.flex-wrap {
+        flex-wrap: wrap;
+    }
+    &.flex-wrap-reverse {
+        flex-wrap: wrap-reverse;
+    }
+    //横向对齐方式
+    &.row-left {
+        justify-content: flex-start;
+    }
+    &.row-right {
+        justify-content: flex-end;
+    }
+    &.row-center {
+        justify-content: center;
+    }
+    &.row-between {
+        justify-content: space-between;
+    }
+    &.row-around {
+        justify-content: space-around;
+    }
+    //纵向对齐方式
+    &.col-top {
+        align-items: flex-start;
+    }
+    &.col-bottom {
+        align-items: flex-end;
+    }
+    &.col-center {
+        align-items: center;
+    }
+    &.col-baseline {
+        align-items: baseline;
+    }
+    &.col-stretch {
+        align-items: stretch;
+    }
+    //多行纵向对齐方式
+    &.multi-line-col-top {
+        align-content: flex-start;
+    }
+    &.multi-line-col-bottom {
+        align-content: flex-end;
+    }
+    &.multi-line-col-center {
+        align-content: center;
+    }
+    &.multi-line-col-between {
+        align-content: space-between;
+    }
+    &.multi-line-col-around {
+        align-content: space-around;
+    }
+    &.multi-line-col-stretch {
+        align-content: stretch;
+    }
+}
+
+// flex:1-10
+// 强烈建议不要再用item one那种老写法了,拆散的样式非常的难阅读,还容易出错.
+@for $i from 0 through 10 {
+    .flex-#{$i} {
+        flex: $i;
+    }
+}
+/*******************************
+        Site Overrides
+*******************************/
