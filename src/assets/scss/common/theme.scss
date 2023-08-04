@@ -1,0 +1,92 @@
+:root {
+    --ui-yellow: #ffdc03;
+    --ui-yellow-dark: #8e943f;
+    --ui-green:#53A410;
+}
+.c-blue {
+    color: var(--el-color-primary);
+}
+.c-blue-1 {
+    color: var(--el-color-primary-light-3);
+}
+.c-blue-2 {
+    color: var(--el-color-primary-light-5);
+}
+.c-blue-3 {
+    color: var(--el-color-primary-light-7);
+}
+.c-green {
+    color: var(--el-color-success);
+}
+.c-green-1 {
+    color: var(--el-color-success-light-5);
+}
+.c-red {
+    color: var(--el-color-danger);
+}
+.c-red-1 {
+    color: var(--el-color-danger-light-3);
+}
+
+.c-orange {
+    color: var(--el-color-warning);
+}
+.c-yellow {
+    color: var(--ui-yellow);
+}
+.c-yellow-dark {
+    color: var(--ui-yellow-dark);
+}
+.c-white {
+    color: var(--el-color-white);
+}
+.c-gray {
+    color: var(--el-color-info);
+}
+.c-gray-1 {
+    color: var(--el-color-info-light-3);
+}
+.c-gray-2 {
+    color: var(--el-color-info-light-5);
+}
+.c-gray-3 {
+    color: var(--el-color-info-light-7);
+}
+
+.c-red-linear {
+    background: linear-gradient(#ebb58f, #f84d0b);
+    background-clip: text;
+    color: transparent;
+}
+.c-yellow-linear {
+    background: linear-gradient(#e5e595, #f0ca25);
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+}
+.c-blue-linear {
+    background: linear-gradient(#fff, #fff 20%, #00aeff);
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+}
+
+::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 5px; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px var(--el-color-info-light-3);
+    background: var(--el-color-info-3);
+}
+
+::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px var(--el-color-info-light-7);
+    border-radius: 5px;
+    background:var(--el-color-info-light-7);
+}

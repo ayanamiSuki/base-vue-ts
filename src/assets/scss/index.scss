@@ -3,3 +3,42 @@
 @import './common/atom/margins.scss';
 @import './common/atom/animates.scss';
 @import './common/common.scss';
+@import './common/theme.scss';
+
+// 下面自定义
+html {
+    background: #dde1e8;
+    &::before {
+        content: '';
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 200px;
+        height: 200px;
+        transform: translate(50%, -50%);
+        background: #72cb42;
+        z-index: -1;
+        border-radius: 50%;
+    }
+    &::after {
+        content: '';
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 200px;
+        height: 200px;
+        transform: translate(-60%, 30%);
+        background: #a68e69;
+        z-index: -1;
+        border-radius: 50%;
+    }
+}
+
+#app {
+    background: #fff;
+    border-radius: 10px;
+    width: calc(90%);
+    min-width: 720px;
+    margin: 20px auto;
+    box-shadow: 0 0 5px 1px #b6b6b6;
+}
