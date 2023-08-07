@@ -13,6 +13,7 @@
     const tabPosition = ref('left')
 </script>
 <style lang="scss" scoped>
+// 样式调整
     .left-tabs::v-deep{
         .el-tabs__active-bar{
             right: initial;
